@@ -1,0 +1,70 @@
+#container-title{
+    @include verticalCenter;
+    flex-direction: column;
+    padding-top: 150px;
+    color: white;
+
+    #title-projet{
+        font-size: 60px;
+    }   
+    .fleche{
+        width: 100px;
+    }
+    p{
+        text-align: center;
+        font-size: 60px;
+        margin-top: 50px;
+    }
+}
+
+#container-full-projet{
+    margin-top: 100px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 4%, rgba(255,0,0,1) 4%, rgba(255,0,0,1) 15%, rgba(254,103,106,1) 25%, rgba(254,130,134,1) 45%, rgba(62,177,91,1) 60%, rgba(29,185,84,1) 70%, rgba(29,161,242,1) 81%, rgba(29,161,242,1) 95%);    
+    color: white;
+
+    #twitter,
+    #spotify,
+    #meetic,
+    #cinema{
+        // background-color: hsl(324, 70%, 45%);
+
+        // background-color: #1da1f2;
+        padding: 100px;
+        height: 300vh;
+        h2{
+            font-size: 50px;
+        }   
+        img{
+            width: 100%;
+            border: solid 3px white;
+            border-radius: 40px;
+        }
+        div{
+            border: solid 1px black;
+            border-radius: 30px;
+            margin-top: 100px;
+            box-shadow: 13px 12px 13px 9px #000000a1;
+        }
+        p{
+            font-size: 60px;
+            margin: 50px;
+        }
+        a{
+            @include verticalCenter;
+            font-size: 50px;
+            margin: 50px;
+        }
+        // .button{
+        //     @include verticalCenter;
+        // }
+        // .fleche-direction{
+        //     border: none;
+        //     width: 150px;
+        //     margin: 100px;
+        // }
+    }
+    #cinema{
+        height: 280vh;
+    }
+} 

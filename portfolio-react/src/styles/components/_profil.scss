@@ -1,0 +1,27 @@
+
+#container-profil{
+    @include verticalCenter;
+    flex-direction: column;
+    div{
+        margin-top: 100px;
+        #pp{
+            width: 40rem;
+            border: solid 5px white;
+            border-radius: 350px;
+        } 
+    }
+    div{
+        @include verticalCenter;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        #name{
+            font-size: 70px;
+        }
+        p{
+            width: 100%;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+    }
+}
