@@ -7,8 +7,9 @@ const Profil = () => {
                 <img id='pp' src="./img/pp.png" alt="" />
             </div>
             <div>
-                <h1 id='name'>CHARRON Maxime</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam beatae fugit deserunt commodi consectetur id praesentium ut in dicta?</p>
+                <h1 id='name'>Développeur/Intégrateur web</h1>
+                <p>Je m'appelle Maxime Charron et je suis actuellement étudiant à la WebAcademie, où je suis en formation de développeur/intégrateur web. Passionné par le monde de la technologie et du web, j'ai décidé de me lancer dans cette formation pour acquérir les compétences nécessaires pour créer des expériences web innovantes et convaincantes.</p>
+                <a href="./img/cv1.pdf" download><button>Mon CV</button></a>
             </div>
         </div>
     );

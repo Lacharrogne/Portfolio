@@ -3,25 +3,36 @@
     @include verticalCenter;
     flex-direction: column;
     div{
-        margin-top: 100px;
+        margin-top: 50px;
         #pp{
-            width: 40rem;
-            border: solid 5px white;
+            width: 15rem;
+            border: solid 3px white;
             border-radius: 350px;
         } 
     }
     div{
         @include verticalCenter;
         flex-direction: column;
-        text-align: center;
+        text-align: center; 
         color: white;
         #name{
-            font-size: 70px;
+            font-size: 1.5rem;
         }
         p{
-            width: 100%;
-            margin-top: 10px;
-            font-size: 60px;
+            margin: 20px 0px;
+            font-size: 1rem;
+            width: 80%;
+        }
+        button{
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(0, 0, 193);
+            &:hover{
+                background-color: rgb(0, 0, 151);
+                cursor: pointer;
+            }
         }
     }
 }

@@ -25,6 +25,9 @@ $white: rgb(243, 243, 243);
 body {
   background: $white;
   font-family: $font-1;
+  width: 100vw;
+  background: rgb(29,161,242);
+  background: linear-gradient(0deg, rgba(29,161,242,1) 85%, rgba(62,66,177,1) 100%);
   // @include verticalCenter;
 }
 li {

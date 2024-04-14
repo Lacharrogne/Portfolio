@@ -7,7 +7,8 @@ const Projet = () => {
             <div id='container-title'>
                 <h1 id='title-projet'>Mes Projets</h1>
                 <img className='fleche' src="./img/fleche.png" alt="" />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nesciunt optio cum rem quisquam adipisci architecto libero doloribus molestias, pariatur inventore, cupiditate alias, fugiat minima doloremque sapiente veritatis voluptates voluptas.</p>
+                <p>Voici quelques projets que j'ai réalisés seul ou en groupe pendant ma formation à la WebAcademie. Ces expériences m'ont permis d'appliquer mes connaissances et de développer mes compétences techniques.
+                </p>
             </div>
             <div id='container-full-projet'>
                 <div id='twitter'>
@@ -39,7 +40,7 @@ const Projet = () => {
                         </p>
                         <a rel="noopener noreferrer" target='_blank' href="https://github.com/EpitechWebAcademiePromo2025/W-WEB-090-PAR-1-1-spotify-maxime1.charron">Lien du projet</a>
                     </div>
-                    
+
                     {/* <div className='button'>
                         <Link to={"meetic"} smooth={true} offset={0} duration={500}><img className='fleche-direction' src="./img/fleche-bas.png" alt="" /></Link>
                         <Link to={"twitter"} smooth={true} offset={0} duration={500}><img className='fleche-direction' src="./img/fleche-haut.png" alt="" /></Link>
