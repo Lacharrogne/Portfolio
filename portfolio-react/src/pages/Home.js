@@ -1,18 +1,18 @@
 import React from 'react';
 import Profil from '../components/Profil';
 import Nav from '../components/Nav';
-import Comp from '../components/Comp';
+import Skill from '../components/Skill';
 import Projet from '../components/Projet';
-// import Scroll from '../components/Scroll';
 import Form from '../components/Form';
+// import Slider from '../components/Slider';
 
 const Home = () => {
     return (
         <div>
-            {/* <Scroll/> */}
+            {/* <Slider/> */}
             <Nav/>
             <Profil/>
-            <Comp/>
+            <Skill/>
             <Projet/>
             <Form/>
         </div>

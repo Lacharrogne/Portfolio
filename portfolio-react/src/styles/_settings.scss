@@ -1,14 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+}
+
 @font-face {
   font-family: "font-1";
   src: url(../assets/fonts/JosefinSans-Medium.ttf);
 }
-
-$font-1: "font-1", sans-serif;
-
-$color-1: #61dafb;
-$color-2: salmon;
-$color-3: #282c34;
-$white: rgb(243, 243, 243);
 
 @mixin verticalCenter {
   display: flex;
@@ -16,20 +16,140 @@ $white: rgb(243, 243, 243);
   align-items: center;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  background-color: #0D141F;
+  // background: rgb(29,161,242);
+  // background: linear-gradient(0deg, rgba(29,161,242,1) 77%, rgba(27,48,127,1) 90%, rgba(27,32,111,1) 100%);
+  // @include verticalCenter;
+  p,
+  #cv{
+    color: #C2F3FF;
+  }
+  h1,
+  h3{
+    color: #75C7F0;
+  }
 }
 
-body {
-  background: $white;
-  font-family: $font-1;
-  width: 100vw;
-  background: rgb(29,161,242);
-  background: linear-gradient(0deg, rgba(29,161,242,1) 85%, rgba(62,66,177,1) 100%);
-  // @include verticalCenter;
+#title-twitter{
+  color: #70B8FF;
 }
+#title-spotify{
+  color: #3DD68C;
+}
+#title-meetic{
+  color: #FF8DCC;
+}
+#title-cinema{
+  color: #FF977D;
+}
+
+#twitter{
+  background-color: #0D2847;
+  .container-blabla{
+    background-color: #004074;
+    a{
+      color: #70B8FF;
+    }
+    p{
+      color: #C2E6FF;
+    }
+  }
+}
+#spotify{
+  background-color: #132D21;
+  .container-blabla{
+    background-color: #174933;
+    a{
+    color: #3DD68C;
+    }
+    p{
+      color: #B1F1CB;
+    }
+  }
+}
+#meetic{
+  background-color: #37172F;
+  .container-blabla{
+    background-color: #591C47;
+    a{
+    color: #FF8DCC;
+    }
+    p{
+      color: #FDD1EA;
+    }
+  }
+}
+#cinema{
+  background-color: #391714;
+  .container-blabla{
+    background-color: #5E1C16;
+    a{
+    color: #FF977D;
+    }
+    p{
+      color: #FBD3CB;
+    }
+  }
+}
+
 li {
   list-style-type: none;
+}
+
+.html{
+  background-color: #F75421;
+  color: white;
+  border-radius: 20px;
+  padding: 2px;
+}
+.css{
+  background-color: #0068BA;
+  color: white;
+  border-radius: 20px;
+  padding: 2px;
+}
+.js{
+  background-color: #30312E;
+  color: #E8D44D;
+}
+.php{
+  background-color: #7377AD;
+  color: rgb(42, 42, 42);
+  border-radius: 20px;
+}
+.sql{
+  color: #0565ff;
+}
+.react{
+  background-color: black;
+  color: #61DAFB;
+  border-radius: 20px;
+}
+.sass{
+  color: #CF6C9C;
+}
+.ps{
+  color: #195e96;
+}
+.blender{
+  color: #FF8C08;
+}
+#logo-twitter{
+  color: #0090FF;
+  font-size: 4rem;
+}
+#logo-spotify{
+  color: #00f529;
+  font-size: 4rem;
+}
+#logo-meetic{
+  color: #D6409F;
+  font-size: 4rem;
+}
+#logo-cinema{
+  color: #ff2a00;
+  font-size: 4rem;
 }

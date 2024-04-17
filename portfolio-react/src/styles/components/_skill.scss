@@ -1,0 +1,52 @@
+#container-skill{
+    @include verticalCenter;
+    flex-direction: column;
+    margin: 55px 20px;
+
+    #title-skill{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #1F6692;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+        @media screen and (min-width: 1024px) {
+            font-size: 1.7rem;
+            margin-top: 50px;
+        } 
+    }
+
+    .full-skill{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        
+        .skill{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+            @media screen and (min-width: 1024px) {
+                width: 200px;
+            } 
+        }
+        h3{
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        ul{
+            margin-top: 10px;
+            .icons{
+                font-size: 2rem;
+                margin: 5px;
+                &:hover{
+                    transition: 0.3s ease;
+                    transform: translateY(-5px);
+                }
+                @media screen and (min-width: 1024px) {
+                    font-size: 2.5rem;
+                } 
+            }
+        }
+    }
+}

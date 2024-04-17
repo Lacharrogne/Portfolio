@@ -2,26 +2,43 @@
 #container-nav{
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     margin-top: 20px;
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
+
     #title{
         font-size: 1.5rem;
-        color: white;
+        // color: white;
         margin-left: 30px;
-    }
-    #lien{
-        flex-direction: row;
-        img{
-            width: 40px;
+        @media screen and (min-width: 768px) {
+            margin-left: 50px;
         }
     }
+
+    #lien{
+        flex-direction: row;
+        @media screen and (min-width: 768px) {
+            margin-right: 20px;
+        }
+
+        img{
+            width: 40px;
+            &:hover{
+                transition: 0.2s ease;
+                transform: translateY(-5px);
+            }
+        }
+    }
+
     .side-bar {
         position: fixed;
         top: -150px;
         transition: 0.5s ease-out;
         z-index: 2;
         padding: 40px;
-        background: rgba(255, 255, 255, 0.599);
+        background: #7CE2FE;
         width: 100vw;
         &.active{
             top: 0;
@@ -45,15 +62,16 @@
 
         .toggle-btn {
             position: absolute;
-            top: 154px;
+            top: 155px;
             left: -5px;
             padding: 20px;
+
             span {
                 display: block;
                 width: 4px;
                 height: 4px;
                 border-radius: 5px;
-                background: white;
+                background: #7CE2FE;
                 margin-top: 4px;
                 transition: 0.3s ease;
             }&:hover {
@@ -67,16 +85,22 @@
         ul{
             display: flex;
             justify-content: space-between;
+            font-size: 1rem;
+            @media screen and (min-width: 768px) {
+                justify-content: center;
+                gap: 100px;
+            }
 
             a {
                 cursor: pointer;
-                color: rgb(0, 0, 0);
-                font-size: 1rem;
-                
-                // &:hover {
-                // background: #292929;
-                // color: #fcfcfb;
-                // }
+                @media screen and (min-width: 768px) {
+                    font-size: 1.5rem;
+                    &:hover {
+                        color: rgba(62,66,177,1);
+                        transition: 0.2s ease-out;
+                        transform: scale(1.2);
+                    } 
+                }
             }
         }
     }

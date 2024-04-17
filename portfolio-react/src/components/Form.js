@@ -30,13 +30,13 @@ const Form = () => {
             <h1>Contact</h1>
             <form ref={form} onSubmit={sendEmail}>
                 <div>
-                    <input type='text' placeholder='Name' name='user_name' />
-                    <input type='email' placeholder='Email address' name='user_email' />
+                    <input type='text' placeholder='Nom' name='to_name' />
+                    <input type='email' placeholder='Email' name='from_name' />
                 </div>
                 <div> 
                     <textarea name='message' type='text' placeholder='Message'></textarea> 
                 </div> 
-                <input type='submit' value='Submit' id='input-submit' /> 
+                <input type='submit' value='Envoyer' id='input-submit' /> 
             </form>
         </div>
     );
