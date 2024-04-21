@@ -39,9 +39,9 @@
             .icons{
                 font-size: 2rem;
                 margin: 5px;
+                transition: 0.3s ease;
                 &:hover{
-                    transition: 0.3s ease;
-                    transform: translateY(-5px);
+                    transform: translateY(-6px);
                 }
                 @media screen and (min-width: 1024px) {
                     font-size: 2.5rem;

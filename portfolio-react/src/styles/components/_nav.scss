@@ -10,8 +10,10 @@
 
     #title{
         font-size: 1.5rem;
-        // color: white;
-        margin-left: 30px;
+        margin-left: 1rem;
+        @media screen and (min-width: 375px) {
+            margin-left: 0rem;
+        }
         @media screen and (min-width: 768px) {
             margin-left: 50px;
         }
@@ -21,6 +23,11 @@
         flex-direction: row;
         @media screen and (min-width: 768px) {
             margin-right: 20px;
+        }
+        @media screen and (min-width: 1440px) {
+            position: fixed;
+            right: 1%;
+            z-index: 3;
         }
 
         img{
@@ -34,10 +41,10 @@
 
     .side-bar {
         position: fixed;
-        top: -150px;
+        top: -65px;
         transition: 0.5s ease-out;
         z-index: 2;
-        padding: 40px;
+        padding: 20px;
         background: #7CE2FE;
         width: 100vw;
         &.active{
@@ -62,9 +69,12 @@
 
         .toggle-btn {
             position: absolute;
-            top: 155px;
+            top: 70px;
             left: -5px;
             padding: 20px;
+            @media screen and (min-width: 1440px) {
+                top: 60px;
+            }
 
             span {
                 display: block;

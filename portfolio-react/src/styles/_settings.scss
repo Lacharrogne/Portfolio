@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // overflow-x: hidden;
 }
 
 @font-face {
@@ -20,13 +19,11 @@ body {
   font-family: "font-1", sans-serif;
   width: 100%;
   background-color: #0D141F;
-  // background: rgb(29,161,242);
-  // background: linear-gradient(0deg, rgba(29,161,242,1) 77%, rgba(27,48,127,1) 90%, rgba(27,32,111,1) 100%);
-  // @include verticalCenter;
   p,
   #cv{
     color: #C2F3FF;
   }
+  
   h1,
   h3{
     color: #75C7F0;
@@ -112,6 +109,7 @@ li {
   padding: 2px;
 }
 .js{
+  border-radius: 5px;
   background-color: #30312E;
   color: #E8D44D;
 }

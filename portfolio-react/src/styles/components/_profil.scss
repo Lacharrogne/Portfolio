@@ -11,19 +11,20 @@
             @media screen and (min-width: 768px) {
                 width: 20rem;
             }
-        } 
-    }
+        }
+    } 
     div{
         @include verticalCenter;
         flex-direction: column;
         text-align: center; 
-        // color: white;
+
         #name{
             font-size: 1.5rem;
             @media screen and (min-width: 1024px) {
                 font-size: 1.7rem;
             } 
         }
+
         p{
             margin: 20px 0px;
             font-size: 1rem;
@@ -33,12 +34,12 @@
                 width: 50%;
             } 
         }
+
         button{
             border: none;
             font-weight: bold;
             border-radius: 20px;
             padding: 10px;
-            // color: white;
             background-color: #113555;
             @media screen and (min-width: 1024px) {
                 font-size: 0.8rem;

@@ -31,8 +31,8 @@ const Nav = () => {
         <nav id='container-nav'>
             <h1 id='title'>Portfolio</h1>
             <div id='lien'>
-                <a rel="noopener noreferrer" target='_blank' href="https://github.com/Lacharrogne"><img src="./img/github.png" alt="" /></a>
-                <a rel="noopener noreferrer" target='_blank' href="http://linkedin.com/in/maxime-charron-a3550b2a6"><img src="./img/linkedin.png" alt="" /></a>
+                <a rel="noopener noreferrer" target='_blank' href="https://github.com/Lacharrogne"><img src="./img/github.png" alt="logo github" /></a>
+                <a rel="noopener noreferrer" target='_blank' href="http://linkedin.com/in/maxime-charron-a3550b2a6"><img src="./img/linkedin.png" alt="logo linkedin" /></a>
             </div>
             <div ref={menuRef} className={`side-bar ${isMenuOpen ? 'active' : ''}`}>
                 <div onClick={toggleMenu} className="toggle-btn" id="btn">

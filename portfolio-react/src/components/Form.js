@@ -16,7 +16,7 @@ const Form = () => {
       )
       .then(
         (result) => {
-          alert('message sent successfully...');
+          alert('message envoyer avec succès');
           console.log(result.text);
         },
         (error) => {
@@ -28,13 +28,13 @@ const Form = () => {
     return (
         <div id='container-form'> 
             <h1>Contact</h1>
-            <form ref={form} onSubmit={sendEmail}>
+            <form action='#' ref={form} onSubmit={sendEmail}>
                 <div>
-                    <input type='text' placeholder='Nom' name='to_name' />
-                    <input type='email' placeholder='Email' name='from_name' />
+                    <input type='text' placeholder='Nom' name='to_name' required />
+                    <input type='email' placeholder='Email' name='from_name' required />
                 </div>
                 <div> 
-                    <textarea name='message' type='text' placeholder='Message'></textarea> 
+                    <textarea name='message' type='text' placeholder='Message' required></textarea> 
                 </div> 
                 <input type='submit' value='Envoyer' id='input-submit' /> 
             </form>
